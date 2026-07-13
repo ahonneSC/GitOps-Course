@@ -21,6 +21,13 @@ team_settings:
       enable_failing_policies_webhook: true
       destination_url: https://webhook.site/6de39ad7-9cea-4d7d-ba68-abc271405e6f
       host_batch_size: 0
+software:
+  packages:
+  - path: ../platforms/macos/software/zoom.yaml
+    self_service: true
+    setup_experience: true
+    categories:
+      - Communication
 controls:
   setup_experience:
     ###########################################################
