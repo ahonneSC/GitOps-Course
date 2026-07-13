@@ -15,6 +15,12 @@
 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 name: "💻 Workstations"
+team_settings:
+  webhook_settings:
+    failing_policies_webhook:
+      enable_failing_policies_webhook: true
+      destination_url: https://webhook.site/6de39ad7-9cea-4d7d-ba68-abc271405e6f
+      host_batch_size: 0
 controls:
   setup_experience:
     ###########################################################
@@ -195,10 +201,3 @@ software:
 
   app_store_apps: # Apps to install via VPP from the macOS App Store, if any
     # …
-
-  settings:
-    webhook_settings:
-      failing_policies_webhook:
-        enable_failing_policies_webhook: true
-        destination_url: 	https://webhook.site/6de39ad7-9cea-4d7d-ba68-abc271405e6f
-        host_batch_size: 0
