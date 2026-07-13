@@ -29,6 +29,10 @@ software:
     categories:
       - Communication
 controls:
+  scripts:
+    - paths: ../platforms/windows/scripts/*.ps1
+  enable_disk_encryption: true
+  enable_recovery_lock_password: true
   setup_experience:
     ###########################################################
     # Configure the macOS setup experience
@@ -81,6 +85,9 @@ controls:
   macos_updates:
     deadline: "2026-07-30"
     minimum_version: "26.4"
+  ipados_updates:
+    deadline: "2026-07-30"
+    minimum_version: "26.2"
   apple_settings:
     configuration_profiles:
       - path: ../platforms/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
