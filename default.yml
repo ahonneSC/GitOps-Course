@@ -33,6 +33,9 @@ org_settings:
     ###########################################################
     server_url: $FLEET_URL
 
+  fleet_desktop:
+    transparency_url: https://catoftheday.com
+
   webhook_settings:
     activities_webhook:
       enable_activities_webhook: true
